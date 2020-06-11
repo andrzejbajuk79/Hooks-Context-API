@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+html,
+* {
+ box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+input {
+ font: caption;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+ padding: 0.5em;
+ border: 1px solid #f32e5b;
+ background-color: #fbbfcd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:not(:first-of-type) {
+ border-left: none;
 }
 
-.App-link {
-  color: #61dafb;
+button,
+.button,
+input[type='submit'] {
+ background-color: #f32e5b;
+ border: 1px solid #e10d3d;
+ color: white;
+ padding: 0.5em;
+ transition: all 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover,
+.button:hover,
+input[type='submit']:hover {
+ background-color: #f65e81;
+}
+
+button:active,
+.button:active,
+input[type='submit']:active {
+ background-color: #f4466e;
+}
+
+button.full-width,
+.button.full-width,
+input[type='submit'].full-width {
+ width: 100%;
+ margin: 1em 0;
+}
+
+.Application {
+ margin: auto;
+ max-width: 400px;
+}
+
+.Grudges-searchTerm {
+ background-color: white;
+ margin-bottom: 0.5em;
+ width: 100%;
+}
+
+.Grudge {
+ border: 1px solid #f4466e;
+ padding: 1em;
+ margin: 1em 0;
+}
+
+.Grudge h3 {
+ margin-top: 0;
+}
+
+.Grudge-forgiven {
+ color: #f4466e;
+}
+
+.NewGrudge {
+ display: flex;
+}
+
+.NewGrudge-input {
+ width: 100%;
 }

@@ -1,10 +1,14 @@
 import React from 'react'
-import './App.css'
 
-function App() {
+import './App.css'
+import NewGrudge from './components/NewGrudge'
+import Grudges from './components/Grudges'
+
+const App = () => {
  return (
-  <div>
-   <h3>App</h3>
+  <div className="App">
+   <NewGrudge />
+   <Grudges />
   </div>
  )
 }

@@ -1,6 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import {GrudgeProvider} from './context/GrudgeState'
 
-ReactDOM.render (<App />, document.getElementById ('root'));
+ReactDOM.render(
+ <GrudgeProvider>
+  <App />
+ </GrudgeProvider>,
+ document.getElementById('root')
+)
